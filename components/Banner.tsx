@@ -10,10 +10,9 @@ interface Props {
 }
 const Banner = ({ netflixOriginals }: Props) => {
   const [movie, setmovie] = useState<Movie | null>(null);
-  // const BASE_URL = 'https://api.themoviedb.org/3'
+  
 
   useEffect(() => {
-    // setmovie(Math.floor(Math.random() * netflixOriginals.length))
     setmovie(
       netflixOriginals[Math.floor(Math.random() * netflixOriginals.length)]
     );

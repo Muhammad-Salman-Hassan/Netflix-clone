@@ -1,12 +1,12 @@
-import type { NextPage } from "next";
+
 import Head from "next/head";
-import Image from "next/image";
+
 import Banner from "../components/Banner";
 import Header from "../components/Header";
 import Row from "../components/Row";
 import { Movie } from "../interfaces";
 import requests from "../utils/Request";
-import Login from "./Login";
+
 
 interface Props {
   netflixOriginals: Movie[];
@@ -40,16 +40,16 @@ const Home = ({
 
       <Header />
       <main className="relative pl-4 pb-24 lg:space-y-24 lg:pl-16 ">
-      <Banner netflixOriginals={netflixOriginals} />
-      <section className="md:space-y-24">
-        <Row title="TopRated" movie={topRated}/>
-        <Row title="Trending" movie={trendingNow}/>
-        <Row title="Action Movies" movie={actionMovies}/>
-        <Row title="Comedy Movies" movie={comedyMovies}/>
-        <Row title="Horror Movies" movie={horrorMovies}/>
-        <Row title="Romance Movies" movie={romanceMovies}/>
-        <Row title="Documentries" movie={documentries}/>
-      </section>
+        <Banner netflixOriginals={netflixOriginals} />
+        <section className="md:space-y-24">
+          <Row title="TopRated" movie={topRated} />
+          <Row title="Trending" movie={trendingNow} />
+          <Row title="Action Movies" movie={actionMovies} />
+          <Row title="Comedy Movies" movie={comedyMovies} />
+          <Row title="Horror Movies" movie={horrorMovies} />
+          <Row title="Romance Movies" movie={romanceMovies} />
+          <Row title="Documentries" movie={documentries} />
+        </section>
       </main>
     </div>
   );

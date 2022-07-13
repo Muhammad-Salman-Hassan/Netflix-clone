@@ -4,7 +4,7 @@
 @tailwind utilities;
 
 
-/* for body html and all base thing  */
+
 @layer base {
     body {
         
@@ -17,7 +17,7 @@
     }
 }
 
-/* For custom css */
+
 @layer components {
     .headerLink {
         @apply cursor-pointer text-sm font-light text-[#e5e5e5] transition duration-[400] hover:text-[#b3b3b3] lg:text-lg lg:font-thin
